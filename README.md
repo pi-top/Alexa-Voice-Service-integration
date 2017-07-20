@@ -107,7 +107,7 @@ A [demonstration script](https://github.com/pi-top/Alexa-Voice-Service-Integrati
    
    `pt-avs playback`
 
-## Documentation & Support <a name="support"></a>
+## Support <a name="support"></a>
 
 ### Links <a name="support-links"></a>
 
