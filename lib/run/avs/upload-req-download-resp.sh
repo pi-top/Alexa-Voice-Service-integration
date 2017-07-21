@@ -38,7 +38,7 @@ rm "$AVS_REQ_FILE"
 
 if [ $curlSuccess -eq 0 ]; then
 	if [ -f "$AVS_RESP_TMP_FILE" ]; then
-		cp "$AVS_RESP_TMP_FILE" /tmp/lastResponse
+		cp "$AVS_RESP_TMP_FILE" "$AVS_RESP_TMP_BAK_FILE"
 		if grep -q "Content-Type: audio\/mpeg" "$AVS_RESP_TMP_FILE"; then
 			sed '1,/Content-Type: audio\/mpeg/d' "$AVS_RESP_TMP_FILE" | sed '$d' > "$AVS_RESP_FILE"
 			rm "$AVS_RESP_TMP_FILE"
