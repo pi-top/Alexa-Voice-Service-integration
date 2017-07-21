@@ -38,14 +38,19 @@ rm "$AVS_REQ_FILE"
 
 if [ $curlSuccess -eq 0 ]; then
 	if [ -f "$AVS_RESP_TMP_FILE" ]; then
+		cp "$AVS_RESP_TMP_FILE" "$AVS_RESP_TMP_BAK_FILE"
 		if grep -q "Content-Type: audio\/mpeg" "$AVS_RESP_TMP_FILE"; then
 			sed '1,/Content-Type: audio\/mpeg/d' "$AVS_RESP_TMP_FILE" | sed '$d' > "$AVS_RESP_FILE"
 			rm "$AVS_RESP_TMP_FILE"
 			echo "OK"
 			exit 0
 		elif grep -q "Content-Type: application\/json" "$AVS_RESP_TMP_FILE"; then
-			contentLength="$(grep "Content-Length" "$AVS_RESP_TMP_FILE" | awk '{print $NF}')"
-			if [[ "$contentLength" != "0" ]]; then
+			contentLength="$(grep "Content-Length" "$AVS_RESP_TMP_FILE")"
+			if [[ "$contentLength" == *": 0"* ]]; then
+				"$AVS_RESP_TMP_FILE"
+				echo "No Content"
+				exit 0
+			else
 				lastLineOfResp="$(tail -n 1 "$AVS_RESP_TMP_FILE")"
 				error="$(echo "$lastLineOfResp" | jq -r .error)"
 
@@ -54,12 +59,9 @@ if [ $curlSuccess -eq 0 ]; then
 				else
 					echo "There was an unknown error."
 				fi
+
 				rm "$AVS_RESP_TMP_FILE"
 				exit 1
-			else
-				rm "$AVS_RESP_TMP_FILE"
-				echo "No Content"
-				exit 0
 			fi
 		else
 			echo "There was an unrecognized response."
