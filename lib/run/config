@@ -3,4 +3,5 @@ mkdir -p "$AVS_TMP_DIR"
 
 AVS_REQ_FILE="$AVS_TMP_DIR/req.wav"
 AVS_RESP_TMP_FILE="$AVS_TMP_DIR/resp.txt"
+AVS_RESP_TMP_BAK_FILE="$AVS_TMP_DIR/previous_resp.txt"
 AVS_RESP_FILE="$AVS_TMP_DIR/resp.wav"
