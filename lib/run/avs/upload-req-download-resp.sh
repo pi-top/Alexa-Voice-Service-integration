@@ -47,7 +47,7 @@ if [ $curlSuccess -eq 0 ]; then
 		elif grep -q "Content-Type: application\/json" "$AVS_RESP_TMP_FILE"; then
 			contentLength="$(grep "Content-Length" "$AVS_RESP_TMP_FILE")"
 			if [[ "$contentLength" == *": 0"* ]]; then
-				"$AVS_RESP_TMP_FILE"
+				rm "$AVS_RESP_TMP_FILE"
 				echo "No Content"
 				exit 0
 			else
