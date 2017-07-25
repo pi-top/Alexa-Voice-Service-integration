@@ -51,7 +51,7 @@ This requires that an Amazon account is paired with a <b>pi-top</b> account.
 
 ## Software <a name="software"></a>
 
-### Using Alexa on <b>pi-top</b>OS <a name="software-pt-os"></a>
+### Using Alexa on pi-topOS <a name="software-pt-os"></a>
 ![Alexa Icon](https://static.pi-top.com/images/alexa_icon.png "Alexa Icon")
 
 On the latest release of <b>pi-top</b>OS (July 2017) onwards, <b>pi-top</b>PULSE and support for Amazon Alexa are provided 'out of the box'. When you log into your <b>pi-top</b> account in <b>pi-top</b>DASHBOARD, a microphone button will appear in the navigation bar.
