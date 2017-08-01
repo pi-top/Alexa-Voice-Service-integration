@@ -11,7 +11,7 @@
 	* [Links](#support-links)
 	* [Troubleshooting](#support-troubleshooting)
 
-## Quick Start <a name="quick-start"></a>
+## <a name="quick-start"></a> Quick Start
 ---
 **NOTE:** You will need to have a [<b>pi-top</b>PULSE](https://github.com/pi-top/pi-topPULSE) connected to your Raspberry Pi.
 
@@ -42,16 +42,16 @@ sudo apt-get install pt-avs-demo pt-pulse
 
 ---
 
-## Overview <a name="overview"></a>
+## <a name="overview"></a> Overview
 
 Using the microphone and speaker of a <b>pi-top</b>PULSE, it is possible to interact with Amazon's Alexa Voice Service. This implementation has been designed to abstract away much of the internal operations involved, allowing users to record an audio file containing a question; send this to Alexa; and download and play the Alexa response.
 
 This requires that an Amazon account is paired with a <b>pi-top</b> account.
 
 
-## Software <a name="software"></a>
+## <a name="software"></a> Software
 
-### Using Alexa on pi-topOS <a name="software-pt-os"></a>
+### <a name="software-pt-os"></a> Using Alexa on pi-topOS
 ![Alexa Icon](https://static.pi-top.com/images/alexa_icon.png "Alexa Icon")
 
 On the latest release of <b>pi-top</b>OS (July 2017) onwards, <b>pi-top</b>PULSE and support for Amazon Alexa are provided 'out of the box'. When you log into your <b>pi-top</b> account in <b>pi-top</b>DASHBOARD, a microphone button will appear in the navigation bar.
@@ -67,7 +67,7 @@ Once you have linked your <b>pi-top</b> and Amazon accounts, the microphone butt
 Download the latest version of <b>pi-top</b>OS [here](https://pi-top.com/products/os#download).
 
 
-### Using Alexa on Raspbian <a name="software-raspbian"></a>
+### <a name="software-raspbian"></a> Using Alexa on Raspbian
 
 #### Installing Dependencies
 
@@ -107,13 +107,13 @@ A [demonstration script](https://github.com/pi-top/Alexa-Voice-Service-Integrati
    
    `pt-avs playback`
 
-## Support <a name="support"></a>
+## <a name="support"></a> Support
 
-### Links <a name="support-links"></a>
+### <a name="support-links"></a> Links
 
 * [Support](https://support.pi-top.com/)
 
-### Troubleshooting FAQ <a name="support-troubleshooting"></a>
+### <a name="support-troubleshooting"></a> Troubleshooting FAQ
 
 #### Why is Alexa not responding?
 
