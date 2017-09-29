@@ -1,15 +1,17 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 import signal
 import sys
 import ptpulse.microphone as mic
 import time
 
+
 def exit():
     if mic.is_recording():
         mic.stop()
         mic.save("/tmp/pt-avs/req.wav", True)
     sys.exit(0)
+
 
 def on_signal_received(signal, frame):
     exit()
