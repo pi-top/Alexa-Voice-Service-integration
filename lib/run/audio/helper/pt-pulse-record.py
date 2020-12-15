@@ -2,7 +2,7 @@
 
 import signal
 import sys
-import ptpulse.microphone as mic
+import pitop.pulse.microphone as mic
 import time
 
 
