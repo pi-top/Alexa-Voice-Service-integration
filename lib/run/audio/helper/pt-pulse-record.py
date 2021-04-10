@@ -3,7 +3,6 @@
 import signal
 import sys
 import pitop.pulse.microphone as mic
-import time
 
 
 def exit():
