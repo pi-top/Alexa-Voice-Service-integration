@@ -1,0 +1,42 @@
+pt-avs (2.0.1) buster; urgency=medium
+
+  * Use latest SDK
+
+ -- Mike Roberts <mike@pi-top.com>  Tue, 15 Dec 2020 00:59:18 +0000
+
+pt-avs (2.0.0) buster; urgency=medium
+
+  * Migrate to native package
+  * Upgrade package format to compat level 12
+
+ -- Mike Roberts <mike@pi-top.com>  Tue, 20 Oct 2020 13:50:57 +0100
+
+pt-avs (1.1.1-1) buster; urgency=medium
+
+  * Move to Buster
+
+ -- Mike Roberts <mike@pi-top.com>  Tue, 25 Jun 2019 15:10:39 +0100
+
+pt-avs (1.1.0-1) stretch; urgency=low
+
+  * Updated package for Stretch
+
+ -- Mike Roberts <mike@pi-top.com>  Fri, 23 Apr 2018 16:19:05 +0000
+
+pt-avs (1.0.2-1) jessie; urgency=low
+
+  * Migrated to Python 3
+
+ -- Mike Roberts <mike@pi-top.com>  Thu, 05 Oct 2017 14:59:35 +0100
+
+pt-avs (1.0.1-1) jessie; urgency=low
+
+  * Improved detection logic for No Content responses from AVS
+
+ -- Ben Pring <ben@pi-top.com>  Fri, 21 Jul 2017 14:23:47 +0100
+
+pt-avs (1.0.0-1) jessie; urgency=low
+
+  * Initial release
+
+ -- Matt Simons <matt@pi-top.com>  Wed, 20 Jun 2017 10:51:47 +0100
