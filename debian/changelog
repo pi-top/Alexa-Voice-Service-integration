@@ -1,3 +1,30 @@
+pt-avs (2.0.2) buster; urgency=medium
+
+  [ Ben P ]
+  * In combination with changes to dashboard, handle No content errors from AVS better
+
+  [ Mike Roberts ]
+  * Update README.md
+  * Add AVS_RESP_TMP_BAK_FILE to config
+  * Use AVS_RESP_TMP_BAK_FILE
+  * Update upload-req-download-resp.sh
+  * README: Added bold brand styling
+  * README: Bold brand styling
+  * README: Updated anchor points
+
+  [ Ben P ]
+  * Use python3
+
+  [ Mike Roberts ]
+  * Use latest SDK
+  * Remove unused import
+  * Add build files for pt-avs
+  * Add GitHub workflows
+  * Fix install file
+  * Standards-Version: 4.5.1
+
+ -- pi-top <deb-maintainers@pi-top.com>  Fri, 07 May 2021 17:06:19 +0000
+
 pt-avs (2.0.1) buster; urgency=medium
 
   * Use latest SDK
