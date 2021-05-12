@@ -1,3 +1,10 @@
+pt-avs (2.0.2) buster; urgency=medium
+
+  * Remove unused import in pt-pulse-record
+  * Use Standards-Version: 4.5.1
+
+ -- pi-top <deb-maintainers@pi-top.com>  Fri, 07 May 2021 17:06:19 +0000
+
 pt-avs (2.0.1) buster; urgency=medium
 
   * Use latest SDK
