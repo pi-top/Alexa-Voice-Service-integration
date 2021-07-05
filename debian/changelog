@@ -1,3 +1,13 @@
+pt-avs (2.0.3) buster; urgency=medium
+
+  [ Mike Roberts ]
+  * Use 'multiarch/qemu-user-static:register'
+  * Remove unused Lintian override
+  * Use tonistiigi/binfmt
+  * Workflow: create draft release manually
+
+ -- pi-top <deb-maintainers@pi-top.com>  Mon, 05 Jul 2021 09:59:28 +0000
+
 pt-avs (2.0.2) buster; urgency=medium
 
   * Remove unused import in pt-pulse-record
